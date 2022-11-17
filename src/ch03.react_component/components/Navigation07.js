@@ -2,6 +2,19 @@ import {Component} from 'react';
 
 class Navigation extends Component{
   render(){
+    console.log('Navigation render');
+
+    var datalist=this.props.datalist;
+    var i = 0;
+    var mylist=[];
+    while(i<datalist.length){
+      
+      mylist.push(<li><a></a></li>);  
+      i=i+1;
+
+
+    }
+
     return(
         <nav>
           <ul>

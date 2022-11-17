@@ -2,6 +2,7 @@ import {Component} from 'react';
 
 class Heading extends Component{
   render(){
+    console.log('Heading render');
     return(
         <header>
           <h1>{this.props.greeting}</h1>

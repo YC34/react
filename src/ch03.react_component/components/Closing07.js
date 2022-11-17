@@ -2,6 +2,7 @@ import {Component} from 'react';
 
 class Closing extends Component{
   render(){
+    console.log('Closing render');
     return(
         <article>
           <h2>{this.props.closing}</h2>
