@@ -17,7 +17,10 @@ import './index.css';
 // import App from './ch03.react_component/App_propTypes_defaultProps';
 // import App from './ch03.react_component/App_branching';
 // import App from './ch03.react_component/App_array_and_table';
-import App from './ch04.event_handing/App_event_test';
+// import App from './ch04.event_handing/App_array_and_table';
+// import App from './ch05.styling_example/App_rounded_rectangle_01';
+// import App from './ch05.styling_example/App_rounded_rectangle_02';
+import App from './ch05.styling_example/App_font_size_02';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
