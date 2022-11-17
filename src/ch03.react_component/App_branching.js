@@ -7,8 +7,9 @@ import Closing from './components/Closing07';
 class App extends Component{
   constructor(props){
       super(props);
-
+      /* 'hahaha' 'hohoho'*/
       this.state={
+        mode:'hahaha',
         heading:{greeting:'good morning',hello:'hello~~everyone'},
         close:{closing:'끝맺음',comment:'잘 가세요.'},
         contents:[
@@ -23,13 +24,38 @@ class App extends Component{
 
   render(){
     console.log('App render')
+
+    var _closing,_comment=null; //  임시 변수
+    var _greeting,_hello=null; //  임시 변수
+    if(this.state.mode==='hahaha'){
+
+      _closing=this.state.close.closing;
+      _comment=this.state.close.comment;
+      _greeting=this.state.heading.greeting;
+      _hello=this.state.heading.hello;
+
+    }else if(this.state.mode==='hohoho') {
+      
+      _closing=this.state.contents[0].title;
+      _comment=this.state.contents[0].description;
+
+      _greeting='그래 왔늬?'
+      _hello='어서와~'
+
+    }
+
+
+
+   
+
+
     return(
         <div>
-          <Heading greeting={this.state.heading.greeting} hello={this.state.heading.hello}></Heading>
+          <Heading greeting={_greeting} hello={_hello}></Heading>
 
           <Navigation datalist={this.state.contents}></Navigation>
           
-          <Closing closing={this.state.close.closing} comment={this.state.close.comment}></Closing>
+          <Closing closing={_closing} comment={_comment}></Closing>
         </div>
       );
   }

@@ -9,7 +9,8 @@ class Navigation extends Component{
     var mylist=[];
     while(i<datalist.length){
       
-      mylist.push(<li><a></a></li>);  
+      mylist.push(<li key={datalist[i].id}><a href={"/content/"+datalist[i].id}>{datalist[i].title}({datalist[i].description})</a></li>);
+
       i=i+1;
 
 
@@ -18,9 +19,7 @@ class Navigation extends Component{
     return(
         <nav>
           <ul>
-              <li><a href="1.html">{this.props.member01}</a></li>
-              <li><a href="2.html">{this.props.member02}</a></li>
-              <li><a href="3.html">{this.props.member03}</a></li>
+            {mylist}
           </ul>
         </nav>
       );

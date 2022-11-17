@@ -15,7 +15,8 @@ import './index.css';
 // import App from './ch03.react_component/App_commponent02';
 // import App from './ch03.react_component/App_file_separator';
 // import App from './ch03.react_component/App_propTypes_defaultProps';
-import App from './ch03.react_component/App_branching';
+// import App from './ch03.react_component/App_branching';
+import App from './ch03.react_component/App_array_and_table';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
