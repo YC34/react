@@ -1,7 +1,7 @@
 import {Component} from 'react';
 
 import MemberList from './components/MemberList';
-
+import Frutit from './components/Fruit'
 class App extends Component{
   
   render(){
@@ -10,6 +10,7 @@ class App extends Component{
         <div>
           <MemberList/>
           <hr/>
+          <Frutit/>
         </div>
       );
   }
