@@ -1,6 +1,6 @@
 import LMartFashion from "./LMartFashion";
 
-function LFashion({floor, items, pushData}) {
+function LFashion({floor}) {
 	// console.log('LFashion Component');
 	// console.log(items);
 	return (
