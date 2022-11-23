@@ -22,7 +22,8 @@ import './index.css';
 // import App from './ch05.styling_example/App_rounded_rectangle_02';
 // import App from './ch05.styling_example/App_font_size_02';
 // import App from './ch05.styling_example/App_inheritance_01';
-import App from './ch05.styling_example/App_button_01';
+// import App from './ch05.styling_example/App_button_01';
+import App from './ch07.react_hooks/App_reducer_01';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
